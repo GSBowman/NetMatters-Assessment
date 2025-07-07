@@ -38,7 +38,7 @@ body {
   }
 }
 
-/* line 1, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+/* line 2, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
 footer {
   background-color: #323544;
   color: #fff;
@@ -46,14 +46,44 @@ footer {
   position: relative;
 }
 
-/* line 8, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
-footer .footer-row {
-  display: flex;
-  flex-wrap: wrap;
+/* line 9, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+footer .btn-social {
+  color: #fff;
+  background-color: #212330;
+  border: none;
+  padding: 2em 2.5em;
+  margin-right: 1.5em;
 }
 
-/* line 12, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
-footer .footer-row ul, footer .footer-row li, footer .footer-row a {
+/* line 19, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+footer .fb:hover {
+  background-color: #3b5998;
+}
+
+/* line 22, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+footer .li:hover {
+  background-color: #0077b5;
+}
+
+/* line 25, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+footer .x:hover {
+  background-color: #00aced;
+}
+
+/* line 28, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+footer .insta:hover {
+  background-color: #d93175;
+}
+
+/* line 34, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+footer .footer-row, footer .socials {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+/* line 39, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+footer .footer-row ul, footer .footer-row li, footer .footer-row a, footer .socials ul, footer .socials li, footer .socials a {
   font-size: 0.9rem;
   color: #fff;
   text-decoration: none;
@@ -62,46 +92,46 @@ footer .footer-row ul, footer .footer-row li, footer .footer-row a {
   margin-bottom: .75em;
 }
 
-/* line 21, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
-footer .footer-row a:hover {
+/* line 48, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+footer .footer-row a:hover, footer .socials a:hover {
   text-decoration: underline;
 }
 
-/* line 25, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
-footer .footer-row .footer-menu {
+/* line 52, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+footer .footer-row .footer-menu, footer .socials .footer-menu {
   flex: 100%;
   margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
-  /* line 25, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
-  footer .footer-row .footer-menu {
+  /* line 52, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+  footer .footer-row .footer-menu, footer .socials .footer-menu {
     flex: 50%;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 25, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
-  footer .footer-row .footer-menu {
+  /* line 52, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+  footer .footer-row .footer-menu, footer .socials .footer-menu {
     flex: 25%;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 25, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
-  footer .footer-row .footer-menu {
+  /* line 52, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+  footer .footer-row .footer-menu, footer .socials .footer-menu {
     margin-bottom: 40px;
   }
 }
 
-/* line 41, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
-footer .footer-row .footer-menu h4 {
+/* line 68, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+footer .footer-row .footer-menu h4, footer .socials .footer-menu h4 {
   text-transform: uppercase;
   font-size: 1rem;
   margin-bottom: 26px;
 }
 
-/* line 50, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+/* line 77, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
 .footer-bottom {
   font-size: 0.8rem;
   color: #fff;
