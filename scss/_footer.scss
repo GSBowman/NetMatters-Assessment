@@ -15,7 +15,7 @@ footer {
     }
         
     
-     //button social styles. improve DRY using maps?  
+     //button social styles. ------------------ improve DRY using maps?  
         .fb:hover {
             background-color: $color-fb;
         }
@@ -48,7 +48,7 @@ footer {
         a:hover{
             text-decoration: underline;
         }
-
+        //----------------- update with mixins.
         .footer-menu{
             flex: 100%;
             margin-bottom: 30px;
