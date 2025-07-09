@@ -3,23 +3,49 @@ $font-family--primary    : sans-serif;
 
 
 
-// Descriptive Base Colors
-$white       : #fff;
-$grey        : #323544;
-$darkgrey    : #212330;
+//Color background
+$bluegray: #222431;
+$darkgray: #1b1b1e;
+$gray: #323235;
 
 
-
-
-//Color application
-$color-bg : $grey;
-$color-bg-dark: $darkgrey;
-
+//color social
 $color-fb : #3b5998;
 $color-li : #0077b5;
 $color-x : #00aced;
 $color-insta : #d93175;
 
+//other colors
+$color-blue: #34495e;
+$color-indigo: #6610f2;
+$color-purple: #9b59b6;
+$color-pink: #d63384;
+$color-red: #d64541;
+$color-orange: #f27935;
+$color-yellow: #f4d03f;
+$color-green: #3fc380;
+$color-teal: #20c997;
+$color-cyan: #0dcaf0;
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #6c757d;
+$color-gray-dark: #343a40;
+
+$color-primary: #34495e;
+$color-secondary: #999aa2;
+$color-success: #3fc380;
+$color-info: #0dcaf0;
+$color-warning: #f4d03f;
+$color-danger: #d64541;
+$color-light: #f8f9fa;
+$color-dark: #212529;
+
+
+
+//color usage
+$color-form : $gray;
+$color-footer: $darkgray;
+$color-footer-bottom : $bluegray;
 
 
 // Define breakpoints

@@ -1,0 +1,26 @@
+//button socials.
+.btn-social {
+    color: $color-white;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 1em 1.5em;
+    margin-right: .5em;
+}
+    
+
+    //button social styles. ------------------ improve DRY using maps?  
+    .fb:hover {
+        background-color: $color-fb;
+    }
+    .li:hover {
+        background-color: $color-li;
+    }
+    .x:hover {
+        background-color: $color-x;
+    }
+    .insta:hover {
+        background-color: $color-insta;
+    }
+
+
+//other button
