@@ -5,6 +5,7 @@ footer {
     padding: 30px 0 0;
     position: relative;
 
+
     #footer-logo {
         max-height: 64px;
         max-width: 320px;
@@ -30,7 +31,7 @@ footer {
         a:hover{
             text-decoration: underline;
         }
-        //----------------- update with mixins.
+        //----------------- update with mixins?
         .footer-menu{
             flex: 100%;
             margin-bottom: 15px;
@@ -59,7 +60,48 @@ footer {
 .footer-bottom {
     font-size: 0.8rem;
     color: $color-white;
-    background-color: $color-footer-bottom;//$color-footer-bottom;
+    background-color: $color-footer-bottom;
     padding: 10px;
 
+}
+
+
+
+//--  --  --                                  --form
+form {
+    display:block;
+    max-width: auto;
+    margin-bottom: 100px;
+    padding: 10px 20px;
+}
+
+input,
+textarea,{
+    border: 0;
+    border-bottom: 10px;
+    border-color: $color-white;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: $color-form;
+    color: $color-white;
+    margin-bottom: 30px;
+}
+
+//--  --  --                                  --checkbox
+#wb {
+  width: 15px;
+  height: 15px;
+  margin:3px;
+  float: left;
+}
+#somelabel {
+  float: left;
+  padding-left: 3px;
+}
+
+#check-flex {
+    display: flex;
 }

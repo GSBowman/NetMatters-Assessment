@@ -4,9 +4,9 @@ $font-family--primary    : sans-serif;
 
 
 //Color background
-$bluegray: #222431;
-$darkgray: #1b1b1e;
-$gray: #323235;
+$color-bg-blue: #222431;
+$color-bg-gray: #323235;
+$color-bg-dark: #1b1b1e;
 
 
 //color social
@@ -16,36 +16,13 @@ $color-x : #00aced;
 $color-insta : #d93175;
 
 //other colors
-$color-blue: #34495e;
-$color-indigo: #6610f2;
-$color-purple: #9b59b6;
-$color-pink: #d63384;
-$color-red: #d64541;
-$color-orange: #f27935;
-$color-yellow: #f4d03f;
-$color-green: #3fc380;
-$color-teal: #20c997;
-$color-cyan: #0dcaf0;
-$color-black: #000;
-$color-white: #fff;
-$color-gray: #6c757d;
-$color-gray-dark: #343a40;
-
-$color-primary: #34495e;
-$color-secondary: #999aa2;
-$color-success: #3fc380;
-$color-info: #0dcaf0;
-$color-warning: #f4d03f;
-$color-danger: #d64541;
-$color-light: #f8f9fa;
-$color-dark: #212529;
-
+$color-white : #fff;
 
 
 //color usage
-$color-form : $gray;
-$color-footer: $darkgray;
-$color-footer-bottom : $bluegray;
+$color-form : $color-bg-gray;
+$color-footer: $color-bg-dark;
+$color-footer-bottom : $color-bg-blue;
 
 
 // Define breakpoints
