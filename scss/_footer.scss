@@ -73,12 +73,13 @@ form {
     display:block;
     margin-bottom: 100px;
     padding: 10px 0;
+    max-width: $max-width;
     a{
         color: $color-white;
     }
 }
 
-input:focus,
+input[type=text]:focus,
 textarea:focus {
     border: 2px solid $color-focus;
     box-shadow: $color-focus-glow;
@@ -97,7 +98,7 @@ textarea{
     width: 100%;
     background-color: $color-form;
     color: $color-white;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 small{
     font-size: .7em;
@@ -108,7 +109,7 @@ small{
 #wb {
   width: 15px;
   height: 15px;
-  margin: 3px;
+  margin-right: 13px;
   float: left;
 }
 
@@ -119,4 +120,41 @@ small{
 
 .btn-white {
     display: block;
+}
+
+
+
+
+
+//---------------------------checkmark ------------
+
+input[type=checkbox] {
+        position: relative;
+        cursor: pointer;
+}
+input[type=checkbox]:before {
+        content: "";
+        display: flex;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        left: 0;
+        border: 2px solid $color-white;
+        border-radius: 3px;
+        background-color: $color-footer;
+}
+input[type=checkbox]:checked:after {
+        content: "";
+        display: flex;
+        width: 5px;
+        height: 10px;
+        border: solid $color-white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 2px;
+        left: 7px;
 }

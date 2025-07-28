@@ -27,6 +27,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: $max-width;
 }
 
 .card {   
@@ -34,16 +35,13 @@
     padding: 54px 44px;
     border-radius: 50px;
     color: $color-text-dark;
-    border: 6px solid transparent; /* transition function not interactvie with background shorthand? */
-    background: linear-gradient(180deg,#ffffff,#ffffff) padding-box,
-                linear-gradient(180deg,#80308d,#350e5c) border-box;
+    border: 6px solid transparent; 
+    /* transition function not interactvie with background shorthand? */
 }
 .card:hover {
     color: white;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,.35);
     border: 6px solid transparent;
-    background: linear-gradient(180deg,#80308d,#350e5c) padding-box,
-                linear-gradient(180deg,#80308d,#350e5c) border-box;
 }
 
 
@@ -55,8 +53,6 @@
     font-weight: bold;
     letter-spacing: .1em;
     border: 3px solid transparent;
-    background: linear-gradient(180deg,#ffffff,#ffffff) padding-box,
-                linear-gradient(180deg,#80308d,#350e5c) border-box;
 }
 .card:hover .btn-card {
     color: white;
@@ -73,13 +69,49 @@ h1.txt-dark {
 }
 
 
-
-/* gradient selectors */
-#consultancy {
-    
+/* gradient selectors --- update with variables */
+.dev {
+    background: linear-gradient(180deg,#ffffff,#ffffff) padding-box,
+    linear-gradient(180deg,#80308d,#350e5c) border-box;
+}
+.dev:hover  {
+    background: linear-gradient(180deg,#80308d,#350e5c) padding-box,
+    linear-gradient(180deg,#80308d,#350e5c) border-box;
 }
 
+.it {
+    background: linear-gradient(180deg,#ffffff,#ffffff) padding-box,
+    linear-gradient(180deg,#70ddfd,#125f8f) border-box;
+}
+.it:hover {
+    background: linear-gradient(180deg,#70ddfd,#125f8f) padding-box,
+    linear-gradient(180deg,#70ddfd,#125f8f) border-box;
+}
 
+.marketing {
+    background: linear-gradient(180deg,#ffffff,#ffffff) padding-box,
+    linear-gradient(180deg,#7bcbac,#198e92) border-box;
+}
+.marketing:hover {
+    background: linear-gradient(180deg,#7bcbac,#198e92) padding-box,
+    linear-gradient(180deg,#7bcbac,#198e92) border-box;
+}
 
+.tele {
+    background: linear-gradient(180deg,#ffffff,#ffffff) padding-box,
+    linear-gradient(180deg,#930148,#30013a) border-box;
+}
+.tele:hover {
+    background: linear-gradient(180deg,#930148,#30013a) padding-box,
+    linear-gradient(180deg,#930148,#30013a) border-box;
+}
 
-
+.cyber {
+    background: linear-gradient(180deg,#ffffff,#ffffff) padding-box,
+    linear-gradient(180deg,#5991d5,#4a1c8c) border-box;
+}
+.cyber:hover {
+    background: linear-gradient(180deg,#5991d5,#4a1c8c) padding-box,
+    linear-gradient(180deg,#5991d5,#4a1c8c) border-box;
+}
+// all abouve gradients need to be defined as variables

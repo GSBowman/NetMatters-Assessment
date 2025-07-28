@@ -34,44 +34,74 @@
         <!-- Cards -->
         <div class="container">
             <h1 class="txt-dark">Our Services</h2>
-            <section class="card-grid">
+            <section class="card-grid flex-center">
 
                 <div class="card-flex">
-                    <div class="card" id="consultancy" href="#">
+                    <div class="card dev" href="#">
                         <h3>Consultancy<br>& Development</h3>   <!--2rem 900-->
                         <p>Bespoke software solutions & consultancy for all your business needs including AI, integrations and reporting.</p>   <!--0.8rem 400-->
                         <div class="btn-card-container">
-                            <button class="btn-card btn-gradient">Read More </button>  <!--1rem 600-->
+                            <button class="btn-card btn-gradient dev">Read More </button>  <!--1rem 600-->
                         </div>
                     </div>
                 </div>
 
                 <div class="card-flex">
-                    <div class="card" href="#">
-                        <h3>Consultancy<br>& Development</h3>   <!--2rem 900-->
-                        <p>Bespoke software solutions & consultancy for all your business needs including AI, integrations and reporting.</p>   <!--0.8rem 400-->
+                    <div class="card it" href="#">
+                        <h3>IT<br>Support</h3>   <!--2rem 900-->
+                        <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs. </p>   <!--0.8rem 400-->
                         <div class="btn-card-container">
-                            <button class="btn-card btn-gradient">Read More </button>  <!--1rem 600-->
+                            <button class="btn-card btn-gradient it">Read More </button>  <!--1rem 600-->
                         </div>
                     </div>
                 </div>
 
                 <div class="card-flex">
-                    <div class="card" href="#">
-                        <h3>Consultancy<br>& Development</h3>   <!--2rem 900-->
-                        <p>Bespoke software solutions & consultancy for all your business needs including AI, integrations and reporting.</p>   <!--0.8rem 400-->
+                    <div class="card marketing" href="#">
+                        <h3>Digital<br>Marketing</h3>   <!--2rem 900-->
+                        <p>Driven brand awareness & ROI through creative digital marketing campaigns.</p>   <!--0.8rem 400-->
                         <div class="btn-card-container">
-                            <button class="btn-card btn-gradient">Read More </button>  <!--1rem 600-->
+                            <button class="btn-card btn-gradient marketing">Read More </button>  <!--1rem 600-->
                         </div>
                     </div>
                 </div>
 
                 <div class="card-flex">
-                    <div class="card" href="#">
-                        <h3>Consultancy<br>& Development</h3>   <!--2rem 900-->
-                        <p>Bespoke software solutions & consultancy for all your business needs including AI, integrations and reporting.</p>   <!--0.8rem 400-->
+                    <div class="card tele" href="#">
+                        <h3>Telecoms<br>Services</h3>   <!--2rem 900-->
+                        <p>Business telephony solutions including mobile & connectivity solutions.</p>   <!--0.8rem 400-->
                         <div class="btn-card-container">
-                            <button class="btn-card btn-gradient">Read More </button>  <!--1rem 600-->
+                            <button class="btn-card btn-gradient tele">Read More </button>  <!--1rem 600-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-flex">
+                    <div class="card dev" href="#">
+                        <h3>Web<br>Design</h3>   <!--2rem 900-->
+                        <p> User-centric design for businesses looking to make a lasting impression.</p>   <!--0.8rem 400-->
+                        <div class="btn-card-container">
+                            <button class="btn-card btn-gradient dev">Read More </button>  <!--1rem 600-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-flex">
+                    <div class="card cyber" href="#">
+                        <h3>Cyber<br>Security</h3>   <!--2rem 900-->
+                        <p>Prevention, testing, consultancy & breach management services.</p>   <!--0.8rem 400-->
+                        <div class="btn-card-container">
+                            <button class="btn-card btn-gradient cyber">Read More </button>  <!--1rem 600-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-flex">
+                    <div class="card dev" href="#">
+                        <h3>Web<br>Design</h3>   <!--2rem 900-->
+                        <p> User-centric design for businesses looking to make a lasting impression.</p>   <!--0.8rem 400-->
+                        <div class="btn-card-container">
+                            <button class="btn-card btn-gradient dev">Read More </button>  <!--1rem 600-->
                         </div>
                     </div>
                 </div>
@@ -132,16 +162,18 @@
                     <h2>Latest News</h2>
                 </div>
 
-                <div class="article-wrap flex-center">
-                    <a class="article-link" href="#">placeholder</a>
-                </div>
-                
-                <div class="article-wrap flex-center">
-                    <a class="article-link" href="#">placeholder</a>
-                </div>
+                <div class="welcome-flex">
+                    <div class="article-wrap flex-center">
+                        <a class="article-link" href="#">placeholder</a>
+                    </div>
+                    
+                    <div class="article-wrap flex-center">
+                        <a class="article-link" href="#">placeholder</a>
+                    </div>
 
-                <div class="article-wrap flex-center">
-                    <a class="article-link" href="#">placeholder</a>
+                    <div class="article-wrap flex-center">
+                        <a class="article-link" href="#">placeholder</a>
+                    </div>
                 </div>
 
                 <div class="flex-center">
@@ -174,28 +206,29 @@
                         <p>Connect with us, and we'll call to find out how we can help!</p>
                     </div>
                  <!--                                                                             -Form start      -->
-                    <div id="contact-form-input">
+                    <div id="contact-form-input" class="flex-center">
                         <form action="index.html" method="post">
                             
                             <h2>Get In Touch</h2>
+                            <div>       <!-- needs reworking -->
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="user_name">
 
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="user_name">
+                                <label for="name">Company Name</label>
+                                <input type="text" id="name" name="user_name">
 
-                            <label for="name">Company Name</label>
-                            <input type="text" id="name" name="user_name">
+                                <label for="name">Your Email</label>
+                                <input type="text" id="name" name="user_name">
 
-                            <label for="name">Your Email</label>
-                            <input type="text" id="name" name="user_name">
-
-                            <label for="name">Your Telephone Number</label>
-                            <input type="text" id="name" name="user_name">
+                                <label for="name">Your Telephone Number</label>
+                                <input type="text" id="name" name="user_name">
+                            </div>
 
                             <label for="name">Message</label>
                             <textarea id="bio" name="user_bio"></textarea>
-
-                            <div id="check-flex">                                  <!--       mimic checkbox with button style?     -->
-                                <input id="wb" type="checkbox" /> 
+                            <!-- checkbox -->
+                            <div id="check-flex">                                
+                                <input id="wb" type="checkbox"/> 
                                 <label><small>Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</small></label>
                             </div>
 
