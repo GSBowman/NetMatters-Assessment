@@ -1,0 +1,25 @@
+
+.overflow-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin: 20px auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.client-logo, .client-img {
+    flex-shrink: 0;
+    object-fit: scale-down;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 100%;
+    width: fit-content;
+    filter: grayscale(100%);
+}
+
+.client-logo:hover, .client-img:hover {
+    filter: grayscale(0%);
+}

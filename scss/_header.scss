@@ -1,0 +1,56 @@
+header {
+    // background-color: $color-header-main;  /* update with breakpoint */
+    padding: 20px 0;
+    position:absolute;
+    width:100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-logo {
+    max-height: 100%;
+    max-width: 360px;
+    min-width: 0;
+    align-self: center;
+}
+
+
+//placeholder burger # 
+.nav-burger {                                 
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 1em 1.5em;
+    margin-right: .5em;
+}
+
+
+
+//nav elements
+
+
+//hero intro
+.hero-intro {
+    padding-top: 170px;
+    padding-bottom: 100px;
+    height: auto;
+    background: $intro-overlay, url("../img/home.webp") no-repeat center;
+    background-size: cover;
+    color: $color-white;
+
+    h1{
+        font-weight: 900;
+    }
+    p{
+        font-weight: 600;
+    }
+    button{
+        font-size: 1.25em;
+        padding: 1.5em;
+        margin-top: 2em;
+    }
+}
+

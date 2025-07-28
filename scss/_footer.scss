@@ -57,26 +57,36 @@ footer {
     }
 }
 
-.footer-bottom {
-    font-size: 0.8rem;
+.footer-bottom{
+    font-size: 0.8em;
     color: $color-white;
     background-color: $color-footer-bottom;
-    padding: 10px;
-
+    padding: 10px 0;
+}
+#copyright{
+    margin:.5em 0;
 }
 
 
-
-//--  --  --                                  --form
+//--  --  --   --form
 form {
     display:block;
-    max-width: auto;
     margin-bottom: 100px;
-    padding: 10px 20px;
+    padding: 10px 0;
+    a{
+        color: $color-white;
+    }
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid $color-focus;
+    box-shadow: $color-focus-glow;
+    outline: none;
 }
 
 input,
-textarea,{
+textarea{
     border: 0;
     border-bottom: 10px;
     border-color: $color-white;
@@ -89,19 +99,24 @@ textarea,{
     color: $color-white;
     margin-bottom: 30px;
 }
+small{
+    font-size: .7em;
+}
 
-//--  --  --                                  --checkbox
+
+//--  --  --   --checkbox
 #wb {
   width: 15px;
   height: 15px;
-  margin:3px;
+  margin: 3px;
   float: left;
-}
-#somelabel {
-  float: left;
-  padding-left: 3px;
 }
 
 #check-flex {
     display: flex;
+    margin-bottom: 1.5em;
+}
+
+.btn-white {
+    display: block;
 }

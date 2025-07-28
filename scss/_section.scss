@@ -1,0 +1,41 @@
+
+section{
+    padding-bottom:50px;
+    padding-top: 20px;
+}
+
+// NEWS
+.news {
+    color: $color-text-dark;
+}
+.article-wrap {
+    margin-bottom: 20px;
+    height: 300px;
+    width: 100%;
+    border: 3px dashed $color-accent;
+}
+
+// WELCOME
+.welcome {
+    background-image: $gradient-welcome;
+    color: $color-white;
+    button {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+.welcome-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;     //items not aligning vertiacally
+}
+.section-row {
+    margin: 30px 0;
+    max-width: auto;  //update to match breakpoint with variable?
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px;
+}

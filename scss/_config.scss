@@ -17,15 +17,31 @@ $color-insta : #d93175;
 
 //other colors
 $color-white : #fff;
+$color-accent : #80308d;
+$color-focus : #c29fef;
+$color-focus-glow : 0 0 5px rgba(194,159,239,.8);
 
 
 //color usage
 $color-form : $color-bg-gray;
-$color-footer: $color-bg-dark;
+$color-footer : $color-bg-dark;
 $color-footer-bottom : $color-bg-blue;
+$color-header-main : $color-bg-blue;
+$color-text-dark : #333645;
 
 
 // Define breakpoints
 $breakpoint-s : 768px;
 $breakpoint-m : 992px;
 $breakpoint-l : 1260px;
+
+
+
+//gradients
+$intro-overlay : linear-gradient(95deg,rgba(128,48,141,.2) .76%,rgba(1,72,123,.2) 99.24%),
+                linear-gradient(90deg,transparent,rgba(0,0,0,.2)),
+                linear-gradient(0deg,rgba(34,36,49,.72),rgba(34,36,49,.72)),
+                linear-gradient(0deg,rgba(0,0,0,.4),rgba(0,0,0,.4)) ;
+
+$gradient-welcome : linear-gradient(97deg,#350e5c -1.17%,#80308d 129.98%)
+

@@ -3,28 +3,64 @@
   color: #fff;
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  border-radius: 3px;
   padding: 1em 1.5em;
   margin-right: .5em;
 }
 
-/* line 12, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
+/* line 13, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
 .fb:hover {
   background-color: #3b5998;
 }
 
-/* line 15, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
+/* line 16, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
 .li:hover {
   background-color: #0077b5;
 }
 
-/* line 18, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
+/* line 19, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
 .x:hover {
   background-color: #00aced;
 }
 
-/* line 21, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
+/* line 22, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
 .insta:hover {
   background-color: #d93175;
+}
+
+/* line 28, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
+.btn-white {
+  color: #fff;
+  padding: 1em;
+  border: solid 2px #fff;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.051);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 37, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
+.btn-white:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 43, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
+.btn-colored {
+  color: #333645;
+  padding: 1em;
+  border: solid 2px #80308d;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 52, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_button.scss */
+.btn-colored:hover {
+  color: #fff;
+  background-color: #80308d;
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* line 1, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_layout.scss */
@@ -40,10 +76,11 @@ body {
 
 /* line 9, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_layout.scss */
 .container {
+  /*update with mixin */
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (min-width: 768px) {
@@ -70,6 +107,46 @@ body {
 /* line 28, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_layout.scss */
 .text-center {
   text-align: center;
+}
+
+/* line 32, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_layout.scss */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 38, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_layout.scss */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 45, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_layout.scss */
+h1 {
+  font-size: 2.5rem;
+}
+
+/* line 49, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_layout.scss */
+h2 {
+  font-size: 2.25rem;
+}
+
+/* line 53, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_layout.scss */
+h3 {
+  font-size: 2rem;
+}
+
+/* line 57, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_layout.scss */
+p {
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* line 63, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_layout.scss */
+.txt-dark {
+  color: #333645;
 }
 
 /* line 2, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
@@ -145,21 +222,38 @@ footer .footer-row .footer-menu h4, footer .socials .footer-menu h4 {
 
 /* line 60, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
 .footer-bottom {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   color: #fff;
   background-color: #222431;
-  padding: 10px;
+  padding: 10px 0;
 }
 
-/* line 71, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+/* line 66, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+#copyright {
+  margin: .5em 0;
+}
+
+/* line 72, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
 form {
   display: block;
-  max-width: auto;
   margin-bottom: 100px;
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 
-/* line 78, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+/* line 76, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+form a {
+  color: #fff;
+}
+
+/* line 81, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+input:focus,
+textarea:focus {
+  border: 2px solid #c29fef;
+  box-shadow: 0 0 5px rgba(194, 159, 239, 0.8);
+  outline: none;
+}
+
+/* line 88, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
 input,
 textarea {
   border: 0;
@@ -175,7 +269,12 @@ textarea {
   margin-bottom: 30px;
 }
 
-/* line 94, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+/* line 102, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+small {
+  font-size: .7em;
+}
+
+/* line 108, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
 #wb {
   width: 15px;
   height: 15px;
@@ -183,15 +282,237 @@ textarea {
   float: left;
 }
 
-/* line 100, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
-#somelabel {
-  float: left;
-  padding-left: 3px;
-}
-
-/* line 105, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+/* line 115, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
 #check-flex {
   display: flex;
+  margin-bottom: 1.5em;
 }
+
+/* line 120, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_footer.scss */
+.btn-white {
+  display: block;
+}
+
+/* line 2, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_clients.scss */
+.overflow-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin: 20px auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 13, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_clients.scss */
+.client-logo, .client-img {
+  flex-shrink: 0;
+  object-fit: scale-down;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 100%;
+  width: fit-content;
+  filter: grayscale(100%);
+}
+
+/* line 23, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_clients.scss */
+.client-logo:hover, .client-img:hover {
+  filter: grayscale(0%);
+}
+
+/* line 1, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_header.scss */
+header {
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 8, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_header.scss */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 13, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_header.scss */
+#header-logo {
+  max-height: 100%;
+  max-width: 360px;
+  min-width: 0;
+  align-self: center;
+}
+
+/* line 22, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_header.scss */
+.nav-burger {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 1em 1.5em;
+  margin-right: .5em;
+}
+
+/* line 36, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_header.scss */
+.hero-intro {
+  padding-top: 170px;
+  padding-bottom: 100px;
+  height: auto;
+  background: linear-gradient(95deg, rgba(128, 48, 141, 0.2) 0.76%, rgba(1, 72, 123, 0.2) 99.24%), linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(34, 36, 49, 0.72), rgba(34, 36, 49, 0.72)), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/home.webp") no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+/* line 44, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_header.scss */
+.hero-intro h1 {
+  font-weight: 900;
+}
+
+/* line 47, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_header.scss */
+.hero-intro p {
+  font-weight: 600;
+}
+
+/* line 50, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_header.scss */
+.hero-intro button {
+  font-size: 1.25em;
+  padding: 1.5em;
+  margin-top: 2em;
+}
+
+/* line 2, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_section.scss */
+section {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+/* line 8, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_section.scss */
+.news {
+  color: #333645;
+}
+
+/* line 11, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_section.scss */
+.article-wrap {
+  margin-bottom: 20px;
+  height: 300px;
+  width: 100%;
+  border: 3px dashed #80308d;
+}
+
+/* line 19, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_section.scss */
+.welcome {
+  background-image: linear-gradient(97deg, #350e5c -1.17%, #80308d 129.98%);
+  color: #fff;
+}
+
+/* line 22, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_section.scss */
+.welcome button {
+  width: 100%;
+  font-size: 1em;
+}
+
+/* line 27, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_section.scss */
+.welcome-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 33, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_section.scss */
+.section-row {
+  margin: 30px 0;
+  max-width: auto;
+}
+
+/* line 37, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_section.scss */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 10px;
+}
+
+/* line 1, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_card.scss */
+.card-grid {
+  /* font size formatting - better planning would make this redundant? */
+  display: grid;
+  gap: 40px;
+}
+
+/* line 3, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_card.scss */
+.card-grid button {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* line 7, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_card.scss */
+.card-grid h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+/* line 14, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_card.scss */
+.card-grid p {
+  font-size: 0.8;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+/* line 25, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_card.scss */
+.card-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 32, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_card.scss */
+.card {
+  box-sizing: unset;
+  padding: 54px 44px;
+  border-radius: 50px;
+  color: #333645;
+  border: 6px solid transparent;
+  /* transition function not interactvie with background shorthand? */
+  background: linear-gradient(180deg, #ffffff, #ffffff) padding-box, linear-gradient(180deg, #80308d, #350e5c) border-box;
+}
+
+/* line 41, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_card.scss */
+.card:hover {
+  color: white;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.35);
+  border: 6px solid transparent;
+  background: linear-gradient(180deg, #80308d, #350e5c) padding-box, linear-gradient(180deg, #80308d, #350e5c) border-box;
+}
+
+/* line 50, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_card.scss */
+.btn-card {
+  color: #333645;
+  padding: 1em;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+  border: 3px solid transparent;
+  background: linear-gradient(180deg, #ffffff, #ffffff) padding-box, linear-gradient(180deg, #80308d, #350e5c) border-box;
+}
+
+/* line 61, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_card.scss */
+.card:hover .btn-card {
+  color: white;
+  border: 3px solid white;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 70, ../../Projects/GitHub/NetMatters-Assessment/NetMatters-Assessment/scss/_card.scss */
+h1.txt-dark {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+/* gradient selectors */
 
 /*# sourceMappingURL=styles.css.map */
